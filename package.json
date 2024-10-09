@@ -1,0 +1,12 @@
+{
+  "scripts": {
+    "build": "esbuild app/javascript/*.* --bundle --outdir=app/assets/builds",
+    "build:css": "esbuild app/assets/stylesheets/application.scss --bundle --outdir=app/assets/builds --loader:.scss=css"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@popperjs/core": "^2.11.8",
+    "bootstrap": "^5.3.3",
+    "esbuild": "^0.24.0"
+  }
+}
